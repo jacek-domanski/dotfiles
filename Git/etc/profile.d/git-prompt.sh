@@ -1,18 +1,24 @@
-if test -f /etc/profile.d/git-sdk.sh
-then
-	TITLEPREFIX=SDK-${MSYSTEM#MINGW}
-else
-	TITLEPREFIX=$MSYSTEM
-fi
+#if test -f /etc/profile.d/git-sdk.sh
+#then
+#	TITLEPREFIX=SDK-${MSYSTEM#MINGW}
+#else
+#	TITLEPREFIX=$MSYSTEM
+#fi
 
 if test -f ~/.config/git/git-prompt.sh
 then
 	. ~/.config/git/git-prompt.sh
 else
-	PS1='\[\033]0;$TITLEPREFIX: $PWD\007\]' # set window title
+#	PS1='\[\033]0;$TITLEPREFIX: $PWD\007\]' # set window title
+	PS1='\[\033]0;`basename $(git rev-parse --show-toplevel > /dev/null 2>&1 && git rev-parse --show-toplevel || pwd)`: $PWD\007\]' # set window title
+	
 	PS1="$PS1"'\n'                 # new line
 	PS1="$PS1"'\[\033[32m\]'       # change to green
-	PS1="$PS1"'\u@\h '             # user@host<space>
+	PS1="$PS1"'\u'             	   # user
+	PS1="$PS1"'\[\033[37m\]'       # change to white
+	PS1="$PS1"' @ '                # @
+	PS1="$PS1"'\[\033[32m\]'       # change to green
+	PS1="$PS1"'\h '                # host<space>
 #	PS1="$PS1"'\[\033[35m\]'       # change to purple
 #	PS1="$PS1"'$MSYSTEM '          # show MSYSTEM
 	PS1="$PS1"'\[\033[33m\]'       # change to brownish yellow
