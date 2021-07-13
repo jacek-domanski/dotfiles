@@ -12,6 +12,8 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 
+alias gs='git status'
+
 #raspberry pi
 alias ssh-rpi='ssh pi@192.168.1.94'
 
