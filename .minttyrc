@@ -1,0 +1,11 @@
+Columns=110
+Rows=30
+ThemeFile=xterm
+CursorType=line
+CursorBlinks=yes
+Font=Lucida Console
+FontHeight=9
+FontSmoothing=default
+BoldAsFont=no
+BoldAsColour=yes
+AllowBlinking=no

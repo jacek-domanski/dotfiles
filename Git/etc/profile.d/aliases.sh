@@ -7,6 +7,13 @@ alias ll='ls -l'
 #map notepad++ to npp
 alias npp='C:\\Program\ Files\\Notepad++\\notepad++.exe'
 
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+
+alias gs='git status'
+
 #raspberry pi
 alias ssh-rpi='ssh pi@192.168.1.94'
 
