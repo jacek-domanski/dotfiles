@@ -86,7 +86,6 @@ Shows 2nd parent of commit (when more than 1 parent - merge commit).<br>
 Can be combined with ~2 to create ~2^2 (2nd parent of 2nd ancestor)
 
 `git log --left-right master...experiments`
-
 shows commits that are only on one of the branches, but not on both <br>
 `<` C1 <br>
 `<` C2 <br>
