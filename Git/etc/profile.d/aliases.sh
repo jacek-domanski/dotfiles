@@ -13,6 +13,8 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 
 alias gs='git status'
+alias ga='git add -v --all'
+alias gc='git commit'
 
 #raspberry pi
 alias ssh-rpi='ssh pi@192.168.1.94'
