@@ -98,7 +98,8 @@ shows commits that are only on one of the branches, but not on both <br>
 - Reaplies the work, 
 - Drop the stash if applied cleanly.
 
-
+`git checkout [commit ID] -- path/to/file`
+Revert single file
 
 
 
