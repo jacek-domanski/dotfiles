@@ -15,7 +15,7 @@ Shows only branched not merged into current branch
 `git branch --merged` <br>
 Shows only branched merged into current branch 
 
-`git checkout [commit] -- path/to/file`
+`git checkout [commit] -- path/to/file` <br>
 Revert single file
 
 `git config --list --show-origin` <br>
@@ -110,14 +110,14 @@ Shows 1st ancestor of HEAD
 Shows 2nd parent of commit (when more than 1 parent - merge commit).<br> 
 Can be combined with ~2 to create ~2^2 (2nd parent of 2nd ancestor)
 
-`git tag -a v1.2.3 9fceb02` <br>
-Add tag to specific commit instead of the last one
-
 `git stash branch new_branch`
 - Creates new branch, 
 - Checks out the commit on which the work was stashed, 
 - Reaplies the work, 
 - Drop the stash if applied cleanly.
+
+`git tag -a v1.2.3 9fceb02` <br>
+Add tag to specific commit instead of the last one
 
 
 
