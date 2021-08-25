@@ -15,7 +15,7 @@ Shows only branched not merged into current branch
 `git branch --merged` <br>
 Shows only branched merged into current branch 
 
-`git checkout [commit SHA-1] -- path/to/file`
+`git checkout [commit] -- path/to/file`
 Revert single file
 
 `git config --list --show-origin` <br>
@@ -76,6 +76,18 @@ Delete remote branch
 
 `git remote show origin` <br>
 Info about origin
+
+`git reset --soft [commit]` <br>
+- Move the tip of the branch HEAD points to
+
+`git reset --mixed [commit]` <br>
+- Move the tip of the branch HEAD points to
+- Make the index look like HEAD
+
+`git reset --hard [commit]` <br>
+- Move the tip of the branch HEAD points to
+- Make the index look like HEAD
+- Make the working directory look like the index
 
 `git shortlog --no-merges master --not v1.0.1` <br>
 Summarizes all commits in range
