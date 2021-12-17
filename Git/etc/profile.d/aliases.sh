@@ -4,6 +4,7 @@
 # --show-control-chars: help showing Korean or accented characters
 alias ls='ls -F --color=auto --show-control-chars'
 alias ll='ls -lah'
+
 #map notepad++ to npp
 alias npp='C:\\Program\ Files\\Notepad++\\notepad++.exe'
 
@@ -15,6 +16,9 @@ alias .....='cd ../../../..'
 alias gs='git status'
 alias ga='git add -v --all'
 alias gc='git commit'
+alias pwt='git push && git push --tags'
+
+alias dotfiles='cd C:\\dotfiles'
 
 #raspberry pi
 alias ssh-rpi='ssh pi@192.168.1.94'
