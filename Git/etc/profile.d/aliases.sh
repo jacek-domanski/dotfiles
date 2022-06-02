@@ -17,6 +17,7 @@ alias gs='git status'
 alias ga='git add -v --all'
 alias gc='git commit'
 alias pwt='git push && git push --tags'
+alias sn='git fetch && git lg'
 
 alias dotfiles='cd C:\\dotfiles'
 
