@@ -38,9 +38,9 @@ or <br>
 `git diff master...branch1` <br>
 Show changes since common ancestor
 
-`git fetch . foo:master`
+`git fetch . foo:master` <br>
 Fast-forward merge foo into master without checking it out first. Dot means local repo <br>
-`git fetch . +foo:master`
+`git fetch . +foo:master` <br>
 Like above, but allow for non-fast-forward merges
 
 `git log --since=2.weeks` <br>
