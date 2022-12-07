@@ -39,7 +39,7 @@ or <br>
 Show changes since common ancestor
 
 `git fetch . foo:master`
-Fast-forward merge foo into master without checking it out first. Dot means local repo
+Fast-forward merge foo into master without checking it out first. Dot means local repo <br>
 `git fetch . +foo:master`
 Like above, but allow for non-fast-forward merges
 
