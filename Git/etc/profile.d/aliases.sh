@@ -6,6 +6,7 @@ alias ls='ls -F --color=auto --show-control-chars'
 alias ll='ls -lah'
 #map notepad++ to npp
 alias npp='C:\\Program\ Files\\Notepad++\\notepad++.exe'
+alias aliases='source "C:\\Program Files\\Git\\etc\\profile.d\\aliases.sh"'
 
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -13,8 +14,9 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 
 alias gs='git status'
-alias ga='git add -v --all'
-alias gc='git commit'
+alias ga='git add -v .'
+alias gc='git commit -v'
+alias pwt='git push && git push --tags'
 
 #raspberry pi
 alias ssh-rpi='ssh pi@192.168.1.94'
